@@ -14,6 +14,18 @@ class Counter extends Component {
     //imageUrl: 'https://picsum.photos/200'
   };
 
+  // componentDidUpdate(prevProps, prevState) {
+  //   console.log('prevProps: ', prevProps);
+  //   console.log('prevState: ', prevState);
+  //   // if(prevProps.counter.value !== this.props.counter.value) {
+  //   //   //do an AJAX call and get new data from the server 
+  //   // }
+  // }
+
+  componentWillUnmount() {
+    console.log('Component - Unmount');
+  }
+
   // constructor() {
   //     super();
   //     //this.handleIncrement = this.handleIncrement.bind(this);
@@ -27,6 +39,8 @@ class Counter extends Component {
   };
 
   render() {
+
+    console.log('Counter - Rendered')
 
     return (
       // <img src={this.state.imageUrl} alt="random image" />
